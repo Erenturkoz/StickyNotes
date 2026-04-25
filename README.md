@@ -3,7 +3,6 @@
 An interactive, drag-and-drop workspace for managing daily tasks, built with the MERN stack. Unlike traditional vertical todo lists, this application provides a dynamic "corkboard" experience where users can freely position their notes and archive them with smooth animations.
 
 ![Project Demo](./demo.gif) 
-*(Note: Use a screen recorder to record a 10-15 second GIF of you adding a note, moving it, and archiving it. Save it as demo.gif in your root folder)*
 
 ## ✨ Key Features
 
