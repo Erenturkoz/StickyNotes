@@ -1,0 +1,183 @@
+/* --- ANA EKRAN VE ARKA PLAN --- */
+.board-container {
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- ARŞİV KUTUSU --- */
+.archive-box {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    background-color: #34495e;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border: 2px dashed #bdc3c7;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.archive-box:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* --- YENİ NOT EKLEME PANELİ --- */
+.add-note-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.add-toggle-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffeb3b;
+    border: 2px solid #fbc02d;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.add-toggle-btn:hover {
+    transform: scale(1.1);
+}
+
+.note-form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+
+.note-input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    font-family: inherit;
+}
+
+.note-textarea {
+    height: 60px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.form-btn {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+    font-weight: bold;
+}
+
+.submit-btn {
+    background-color: #fbc02d;
+    color: #333;
+}
+
+.cancel-btn {
+    background-color: #ccc;
+    color: #333;
+}
+
+/* --- NOT KAĞIDI (STICKY NOTE) --- */
+.todo-note {
+    position: absolute;
+    min-width: 160px;
+    max-width: 280px;
+    width: max-content;
+    min-height: 160px;
+    height: auto;
+    padding: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Permanent Marker', cursive, sans-serif;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    background-color: #fff9c4;
+    /* Varsayılan sarı */
+}
+
+.todo-note.completed {
+    background-color: #d1d1d1;
+    /* Tamamlanan gri */
+}
+
+.drag-handle {
+    cursor: move;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    word-break: break-word;
+    font-size: 1.1rem;
+}
+
+.note-details {
+    flex: 1;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.text-completed {
+    text-decoration: line-through;
+    color: #555;
+}
+
+.note-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.check-input {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    text-decoration: underline;
+}
