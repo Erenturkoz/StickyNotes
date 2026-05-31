@@ -24,7 +24,7 @@ An interactive, drag-and-drop workspace for managing daily tasks, built with the
 * Node.js & Express.js (RESTful API architecture)
 * MongoDB & Mongoose (ODM for database management)
 * JSON Web Token (JWT) for secure routing and user sessions
-* CORS & Dotenv (Environment variable management)
+* Dotenv (Environment variable management)
 
 ## 📂 Project Architecture (Monorepo)
 
